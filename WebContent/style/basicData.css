@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+.selectPage{
+	margin-top:20px;
+	margin-left:50px;
+}
+
+hr{
+	width:92%;
+	margin-left:4%;
+}
+
+.create{
+	position:absolute;
+	z-index:100;
+	width:400px;
+	height:auto;
+	margin-left:40%;
+	margin-top:10%;
+	background-color: #fbfbfb;
+}
+
+.createhead{
+	margin-left: 20px;
+	color: gray;
+	font-weight:bolder;
+}
+
+.create hr{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.create .notice{
+	color:red;
+	margin-left:4%;
+}
+
+.create .content{
+	padding-top:5px;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom:5px;
+	height: 70%;
+}
+
+.create .content #serviceID{
+	color:gray;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+
+.create .pagination{
+	margin: 5px 0;
+}
