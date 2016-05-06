@@ -1,0 +1,582 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
+/*Author wzz*/
+.pic-content
+{
+	padding-left:10px;
+	position:relative;
+	overflow:hidden;
+}
+.pic-content .module-history-list
+{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	padding-left: 10px;
+}
+.pic-content .module-history-list .history-list-tips
+{
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+.pic-content .list-view-header
+{
+	position: relative;
+	z-index: 3;
+	height: 43px;
+	background: #f7f7f7;
+}
+.pic-content .list-header
+{
+	overflow: visible;
+	position: relative;
+	z-index: 1;
+}
+.pic-content .list-header ul {
+    background: #f7f7f7;
+    border-radius: 2px;
+    border: 1px solid #d2d2d2;
+    color: #888;
+    height: 41px;
+    line-height: 41px;
+    overflow: hidden;
+	list-style: none;
+}
+.pic-content .list-header .grid-cols .col {
+    cursor: default;
+}
+.pic-content .list-header .grid-cols .first-col {
+    width: 100%;
+    border: 0;
+}
+.pic-content .list-header .first-col .col-item {
+    float: left;
+}
+.pic-content .list-header .check {
+    width: 36px;
+    height: 41px;
+ /*   position: relative; */
+}
+.list-header .check-icon {
+    
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    cursor: default;
+	background: url(../images/list-view_4e60b0c.png)-9px -12px;
+}
+.list-header .list-header-operatearea .list-header-operate {
+    padding-top: 7px;
+    height: 34px;
+}
+.list-header-visible-operate .list-header .list-header-operatearea {
+    display: block;
+}
+.list-header .list-header-operatearea {
+    z-index: 1;
+	display: none;
+	position: absolute;
+	left: 36px;
+	top: 1px;
+	width: 100%;
+	height: 41px;
+	line-height: 41px;
+}
+.list-header  .operate{
+    position: absolute;
+    top: 0px;
+    padding-top: 7px;
+    line-height: normal;
+    display: block;
+    visibility: visible;
+    padding-left: 130px;
+    width: 1016px;
+}
+.list-header .list-header-operatearea .count-tips {
+    padding-right: 10px;
+    display: block;
+    float: left;
+}
+.g-button:link, .g-button:visited {
+    color: #666;
+}
+.g-button {
+    margin: 0 5px;
+    *margin: 0 10px 0 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding-left: 15px;
+    background: url(../images/btn_2d148f3.png) no-repeat 0 -144px;
+    vertical-align: top;
+    white-space: nowrap;
+    outline: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    position: relative;
+}
+.g-button-right {
+    position: relative;
+    right: -1px;
+    display: block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+    padding-right: 15px;
+    height: 28px;
+    line-height: 25px;
+    *line-height: 28px;
+    background: url(../images/btn_2d148f3.png) no-repeat right -144px;
+    cursor: pointer;
+}
+.g-button .icon {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 4px;
+    vertical-align: middle;
+    height: 24px;
+    width: 20px;
+}
+.g-button .text {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+.icon-share-gray {
+    background: url(../images/plugin-icon_7318e47.png) no-repeat -180px 0;
+}
+.icon-download-gray {
+    background: url(../images/sys-icon_9b5f22d.png) no-repeat -60px 0;
+}
+.icon-delete {
+    background: url(../images/sys-icon_9b5f22d.png) no-repeat -210px 0;
+}
+.icon-share-blue {
+    background: url(../images/plugin-icon_7318e47.png) no-repeat -210px 0;
+}
+.icon-download-blue {
+    background: url(../images/sys-icon_9b5f22d.png) no-repeat -90px 0;
+}
+.module-grid-view {
+    position: relative;
+
+    overflow: hidden;
+}
+.module-grid-view .grid-view {
+    height: 100%;
+}
+.grid-view-container {
+	margin-top:10px;
+	margin-right:10px;
+}
+.moveover_img_box {
+	border: 3px solid #2e80dc;
+}
+.img_checkbox {
+	background: url(../images/checkbox_aea6cfd.png) 6px -36px no-repeat;
+	position: absolute;
+	top: -6px;
+	left: 9px;
+	height: 30px;
+	width: 30px;
+	display: none;
+}
+
+.grid-view-container .item_active {
+	border: 3px solid #2e80dc;
+}
+.dialog {
+	position: absolute;
+	border: 3px solid #999;
+	background: #fff;
+	box-shadow: 0 0 9px #999;
+	-webkit-transtion: bottom .1s;
+	overflow: hidden;
+	display: none;
+}
+.dialog-share {
+	width: 620px;
+	top: 14.5px;
+	bottom: auto;
+	left: 370px;
+	right: auto;
+	display: none;
+	visibility: visible;
+	z-index: 55;
+}
+.dialog-header {
+    position: relative;
+    color: #333;
+    background: #eee url(../images/dialog-head_e30ee50.png) repeat-x 0 0;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    -ms-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
+}
+.dialog .dialog-drag {
+    cursor: move;
+}
+.dialog-header h3 {
+    position: relative;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    text-indent: 1em;
+    font-size: 14px;
+    font-weight: 700;
+}
+.dialog .dialog-header-title {
+    display: block;
+    padding-top: 13px;
+    line-height: 16px;
+    margin-right: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.dialog .dialog-control {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 20px;
+}
+.dialog .dialog-control span {
+    cursor: pointer;
+    float: right;
+}
+.dialog .dialog-close {
+    background-position: 0 0;
+}
+.dialog .dialog-icon {
+    background: url(../images/dialog-icon_a9118ce.png) no-repeat 0 0;
+    height: 20px;
+    width: 20px;
+}
+.dialog .dialog-header-title .select-text {
+    font-style: normal;
+    cursor: text;
+}
+.dialog .dialog-body {
+    background: #fff;
+    line-height: 24px;
+}
+.share-dialog {
+    width: 620px;
+}
+.share-dialog .content {
+    padding: 10px 20px;
+    height: 504px;
+}
+.share-dialog .tab {
+    padding: 0 0 5px;
+    overflow: hidden;
+	list-style: none;
+}
+.share-dialog .tab .current {
+    background-color: #f1f1f1;
+    color: #c52d2f;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 4px #ccc;
+}
+.share-dialog .tab li {
+    margin: 0 23px 0 0;
+    height: 93px;
+    width: 97px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+.share-dialog .share-link {
+    padding: 0;
+    display: block;
+}
+.share-dialog .tab .icon {
+    display: block;
+    margin: 10px auto 0;
+    width: 50px;
+    height: 50px;
+}
+.share-dialog .icon {
+    background: url(../images/share-dialog-icon_df041a5.png) no-repeat;
+}
+.share-dialog .share-link .icon {
+    background-position: 8px 4px;
+}
+.share-dialog .share-friend .icon {
+    background-position: -45px 5px;
+}
+.share-dialog .share-mail .icon {
+    background-position: -94px 4px;
+}
+.share-dialog .content .content {
+    padding: 5px 0;
+    height: auto;
+}
+.share-dialog .create-link {
+    margin: 35px 0;
+    position: relative;
+    background-color: #FBFBFB;
+    border: #F1F1F1 1px solid;
+    width: 548px;
+    padding: 20px 15px 0;
+    height: 200px;
+    line-height: 24px;
+}
+.share-dialog .create-link .button-section {
+    position: relative;
+    padding: 55px 0 20px;
+    height: 115px;
+}
+.share-dialog .content .content .all{
+    font-size: 15px;
+	font-family: sans-serif;
+	font-weight:normal;
+}
+.share-dialog .dialog-footer {
+    position: absolute;
+    padding: 0;
+    bottom: 20px;
+    *bottom: 10px;
+    width: 580px;
+}
+.dialog-footer .dialogclose {
+	float: right;
+	margin-left: 10px;
+}
+.share-dialog .mybtn {
+    background: #c52d2f;
+	color: #ffffff;
+	padding: 10px 30px;
+	font-size: 17px;
+}
+.dialog .confirm-dialog-footer {
+    padding-bottom: 20px;
+    background: #fff;
+    text-align: center;
+}
+.dialog-confirm {
+	width: 520px;
+	top: 69.5px;
+	bottom: auto;
+	left: 400px;
+	right: auto;
+	display: none;
+	visibility: visible;
+	z-index: 53;
+}
+.dialog-recycle-confirm {
+	width: 520px;
+	top: 129.5px;
+	bottom: auto;
+	left: 400px;
+	right: auto;
+	display: none;
+	visibility: visible;
+	z-index: 53;
+}
+
+/*video_all.html*/
+.playIcon {
+    display: none;
+    background: url(../images/video_gridview_arrow_icon_3a7d6a9.png) no-repeat;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+}
+
+/*music_all.html*/
+.module-list-view {
+    position: relative;
+    overflow: hidden;
+}
+.module-list-view .list-view {
+    height: 100%;
+}
+.module-list-view .list-view-item {
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #ebebeb;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #FFF;
+}
+.module-list-view .list-view-item .my_checkbox {
+    cursor: default;
+    display: block;
+    height: 38px;
+    left: 3px;
+    line-height: 38px;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    text-indent: 10px;
+    top: 0;
+    width: 32px;
+    zoom: 1;
+    background: url(../images/checkbox_aea6cfd.png) 9px 12px no-repeat;
+}
+.module-list-view .list-view-item .fileicon {
+    cursor: default;
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 37px;
+    top: 11px;
+}
+.fileicon-small-mp3 {
+    background-image: url(../images/listIcon_82b617a.png);
+    background-position: -180px 0;
+}
+.fileicon-small-video {
+    background-image: url(../images/listIcon_82b617a.png);
+	background-position: -210px 0;
+}
+.module-list-view .list-view-item .file-name {
+    position: relative;
+    float: left;
+    width: 60%;
+}
+.module-list-view .list-view-item .file-size {
+    text-indent: 10px;
+    width: 16%;
+    height: 100%;
+    float: left;
+    text-indent: 10px;
+}
+.module-list-view .list-view-item .ctime {
+    width: 23%;
+    height: 100%;
+    float: left;
+    text-indent: 10px;
+}
+.module-list-view .list-view-item .file-name .text {
+    position: relative;
+    text-indent: 60px;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.module-list-view .file-name a {
+	color: #000;
+    text-decoration: none;
+}
+.list-view-container .item_active {
+	background-color: #f7f7f7;
+}
+.module-list .module-list-view .g-button .g-button-right .icon {
+    vertical-align: top;
+    display: block;
+}
+.module-list .module-list-view .g-button .g-button-right .text {
+    display: none;
+}
+.list-view-container .hover-item {
+	background-color: #f7f7f7;
+}
+.module-list-view .list-view-item .file-name .operate {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    right: 0;
+    top: 0;
+    display: none;
+    z-index: 2;
+}
+.list-view-container .operate .g-button {
+    margin: 10px 0 0 5px;
+	background: none;
+}
+.list-view-container .operate .g-button .g-button-right {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: 0 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/*recycle_bin.html*/
+.list-header .col {
+    float: left;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+    text-indent: 10px;
+}
+.module-list-view .list-view-item .col {
+    position: relative;
+    float: left;
+}
+.fileicon-small-recycle {
+	background: url(../images/sprite_list_icon.gif?t=1460010479362) 9999px 9999px no-repeat;
+	background-position: -421px -83px;
+}
+.icon-restore-blue {
+	background: url(../images/btn_icon.gif?t=1460688695690);
+	background-position: -208px -376px;
+}
+.icon-delete-blue {
+	background: url(../images/btn_icon.gif?t=1460688695690);
+	background-position: -205px -276px;
+}
+
+/*video_all.html*/
+.module-toolbar {
+    position: relative;
+	height: 48px;
+	overflow: hidden;
+    z-index: 4;
+    border-bottom: 1px solid #d2d2d2;
+    background: #F7F7F7;
+}
+.module-toolbar .list-grid-switch {
+    margin: 12px 30px 0 0;
+    float: right;
+    _display: inline;
+    _zoom: 1;
+}
+.module-toolbar .list-grid-switch div {
+    height: 29px;
+    width: 32px;
+    float: left;
+	cursor: pointer;
+    background: url(../images/list-switch_bdb86de.png) no-repeat 0 0;
+}
+.module-toolbar .list-switched-on .list-switch {
+    background-position: 0 -35px;
+}
+.module-toolbar .list-switched-on .grid-switch {
+    background-position: right -35px;
+}
+.fileicon-large-mp3 {
+    background-image: url(../images/gridIcon_2a39f1a.png);
+    background-position: -680px 17px;
+}
+.module-grid-view .grid-view-item .fileicon {
+    position: relative;
+    margin: 0 auto;
+    width: 90px;
+    height: 92px;
+    border: 2px solid #FFF;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

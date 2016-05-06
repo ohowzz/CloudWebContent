@@ -12,7 +12,9 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+	<link href="css/gallery_my.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
+	
     
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -88,81 +90,224 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-        
-        
-        <div class="sidebar"> 
-  
-  <!-- Logo -->
- 
-  <div class="sidebar-dropdown"><a href="#">八斗</a></div>
-  <div class="s-content">
-    <ul id="nav">
-      <li> <a href="index.html" class="open br-red"><i class="icon-comments"></i><span class="glyphicon glyphicon-home"></span><span style="font-size:18px;"> 全部文件</span></a> </li>
-      <li class="has_sub"><a href="gallery_all.html" class="br-blue"><i class="icon-list-alt"></i><span class="glyphicon glyphicon-picture"></span><span style="font-size:16px;"> 图片</span></a>       
-      </li>
-      <li class="has_sub"><a href="#" class="br-green"><i class="icon-list-alt"></i><span class="glyphicon glyphicon-file"></span> <span style="font-size:16px;">文档 </span></a>      
-      </li>
-      <li class="has_sub"><a href="#" class="br-orange"><i class="icon-comments"></i><span class="glyphicon glyphicon-hd-video"></span> <span style="font-size:16px;">视频</span> </a>        
-      </li>
-      <li class="has_sub"><a href="#" class="br-yellow"><i class="icon-comments"></i><span class="glyphicon glyphicon-heart"></span> <span style="font-size:16px;">种子</span> </a>        
-      </li>
-      <li class="has_sub"><a href="#" class="br-purple"><i class="icon-comments"></i><span class="glyphicon glyphicon-music"></span> <span style="font-size:16px;">音乐</span> </a>       
-      </li>
-      <li class="has_sub"><a href="#" class="br-red"><i class="icon-comments"></i><span class="glyphicon glyphicon-list-alt"></span> <span style="font-size:16px;">其他</span> </a>       
-      </li>
-      <li> <a href="index.html" class="open br-red"><i class="icon-comments"></i><span class="glyphicon glyphicon-trash"></span>  <span style="font-size:18px;">回收站</span></a> </li>
-    </ul>
-    
-  </div>
+ </header>
+ <div class="content">
+	<div class="row">
+		<div class="sidebar col-md-3"> 
+          <div class="sidebar-dropdown"><a href="#">八斗</a></div>
+			  <div class="s-content">
+				<ul id="nav">
+				  <li> <a href="index.html" class="open br-red"><i class="icon-comments"></i><span class="glyphicon glyphicon-home"></span><span style="font-size:18px;"> 全部文件</span></a> </li>
+				  <li class="has_sub"><a href="gallery_all.html" class="br-blue"><i class="icon-list-alt"></i><span class="glyphicon glyphicon-picture"></span><span style="font-size:16px;"> 图片</span></a>       
+				  </li>
+				  <li class="has_sub"><a href="#" class="br-green"><i class="icon-list-alt"></i><span class="glyphicon glyphicon-file"></span> <span style="font-size:16px;">文档 </span></a>      
+				  </li>
+				  <li class="has_sub"><a href="video_all.html" class="br-orange"><i class="icon-comments"></i><span class="glyphicon glyphicon-hd-video"></span> <span style="font-size:16px;">视频</span> </a>        
+				  </li>
+				  <li class="has_sub"><a href="#" class="br-yellow"><i class="icon-comments"></i><span class="glyphicon glyphicon-heart"></span> <span style="font-size:16px;">种子</span> </a>        
+				  </li>
+				  <li class="has_sub"><a href="music_all.html" class="br-purple"><i class="icon-comments"></i><span class="glyphicon glyphicon-music"></span> <span style="font-size:16px;">音乐</span> </a>       
+				  </li>
+				  <li class="has_sub"><a href="#" class="br-red"><i class="icon-comments"></i><span class="glyphicon glyphicon-list-alt"></span> <span style="font-size:16px;">其他</span> </a>       
+				  </li>
+				  <li> <a href="recycle_bin.html" class="open br-red"><i class="icon-comments"></i><span class="glyphicon glyphicon-trash"></span>  <span style="font-size:18px;">回收站</span></a> </li>
+				</ul>
+			  </div>
+			</div>
+
+		<div class="right-content">
+			<div class="pic-toolbar">
+				<div class="yun-pic-bar">
+					<a class="btn-item" href="#"></a>
+				</div>
+			</div>
+			<div class="pic-content">
+				<div class="module-history-list">
+					<span class="history-list-dir">全部图片</span>
+					<span class="history-list-tips">已加载100个</span>
+				</div>
+				<div class="list-view-header list-header-visible-operate">
+					<div class="list-header">
+						<ul class="grid-cols">
+							<li class="col first-col">
+								<div class="col-item check">
+									<span class="check-icon"></span>
+								</div>
+							</li>
+						</ul>
+						<div class="list-header-operatearea global-clearfix">
+							<span class="count-tips">已选中1个文件/文件夹</span>
+							<div class="list-header-operate" style="white-space: nowrap; position: relative;">
+								<div class="operate">
+									<div class="g-button sharebutton" href="javascipt:void(0);">
+										<span class="g-button-right">
+											<em class="icon icon-share-gray" title="分享">
+											</em>
+											<span class="text" style="width:auto;">分享</span>
+										</span>
+									</div>
+									<a class="g-button" href="">
+										<span class="g-button-right">
+											<em class="icon icon-download-gray" title="下载">
+											</em>
+											<span class="text" style="width:auto;">下载</span>
+										</span>
+									</a>
+									<div class="g-button deletebutton" href="">
+										<span class="g-button-right">
+											<em class="icon icon-delete" title="删除">
+											</em>
+											<span class="text" style="width:auto;">删除</span>
+										</span>
+									</div>
+									<a class="g-button" href="">
+										<span class="g-button-right">
+											<span class="text" style="width:auto;">重命名</span>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid-view-container" style="display:block">
+					<div class="module-grid-view">
+						<div class="grid-view">
+								   <div class="col-md-2 grid_box">
+									  <div class="img_box">
+									   <a href="images/p1.jpg" class="swipebox"  title="Image Title"> <img src="images/p1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+									   <span class="img_checkbox"></span>
+									  </div>
+									  <div class="grid_box2">
+									   <p>voluptatem sequi</p>
+									  </div>
+								   </div>
+								   <div class="col-md-2 grid_box">
+								   <div class="img_box">
+									   <a href="images/p2.jpg" class="swipebox"  title="Image Title"> <img src="images/p2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+									   <span class="img_checkbox"></span>
+									  </div>
+									  <div class="grid_box2">
+									   <p>voluptatem sequi</p>
+									  </div>
+								   </div>
+								   <div class="col-md-2 grid_box">
+									   <div class="img_box">
+									   <a href="images/p3.jpg" class="swipebox"  title="Image Title"> <img src="images/p3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+									   <span class="img_checkbox"></span>
+									  </div>
+									  <div class="grid_box2">
+									   <p>voluptatem sequi</p>
+									  </div>
+								   </div>
+								   <div class="col-md-2 grid_box">
+									   <div class="img_box">
+									   <a href="images/p4.jpg" class="swipebox"  title="Image Title"> <img src="images/p4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+									   <span class="img_checkbox"></span>
+									  </div>
+									  <div class="grid_box2">
+									   <p>voluptatem sequi</p>
+									  </div>
+								   </div>
+								   <div class="col-md-2 grid_box">
+									   <div class="img_box">
+									   <a href="images/p3.jpg" class="swipebox"  title="Image Title"> <img src="images/p3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+									   <span class="img_checkbox"></span>
+									  </div>
+									  <div class="grid_box2">
+									   <p>voluptatem sequi</p>
+									  </div>
+								   </div>
+								   <div class="col-md-2 grid_box">
+										<div class="img_box">
+									   <a href="images/p4.jpg" class="swipebox"  title="Image Title"> <img src="images/p4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+										<span class="img_checkbox"></span>
+										</div>
+										<div class="grid_box2">
+									   <p>voluptatem sequi</p>
+									  </div>
+									  
+								   </div>							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
-<div class="rightBlock">
-   
-    <!-- 蓝色框内部分 -->
-    <div class="panel panel-info">
-      <div class="panel-heading" role="alert">
-        <div class="row">     
-        <div class="col-xs-1">
-           <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">上传 <i class="fa fa-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                                <li><a href="pricing.html">上传文件</a></li>
-                                <li><a href="blog-item.html">上传文件夹</a></li>                                                                                       
-                    </ul>                  
-                </li> 
-                </ul>
-                </div>    
-         
-            <button type="button" class="btn btn-primary" >查询</button>
-          </div>
-          <div class="col-xs-1">
-            <button type="button" class="btn btn-primary" id="create" onclick="window.location='MarketingOpportunityCreate.html'">新建文件夹</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  <div style="margin-top: 7%;margin-left: 1%; width: 98%">
-    <ol class="breadcrumb">
-      <li><a href="#">全部文件</a></li>     
-    </ol>
-  </div>
-  
- </div> 
- </div>
- 
- </header>
- </
- 
- 
-    <section id="portfolio">
-   
- 
-    
-     
-     </section>
-	  <section id="bottom">
+<div id="share" class="dialog dialog-share">
+	<div class="dialog-header dialog-drag">
+		<h3>
+			<span class="dialog-header-title">
+				<em class="select-text">分享文件：</em>
+			</span>
+		</h3>
+		<div class="dialog-control">
+			<span class="dialog-icon dialog-close share-close">
+			</span>
+		</div>
+	</div>
+	<div class="dialog-body">
+		<div class="share-dialog">
+			<div id="_disk_id_1" class="content">
+				<ul class="tab">
+					<li class="share-link current">
+						<span class="icon"></span>
+						链接分享
+					</li>
+					<li class="share-friend">
+						<span class="icon"></span>
+						发给好友
+					</li>
+					<li class="share-mail">
+						<span class="icon"></span>
+						发到邮箱
+					</li>
+				</ul>
+				<ul class="content">
+					<li class="share-link" style="display:block;">
+						<div class="create-link">
+								<span class="all">生成下载链接，然后复制链接发送到QQ,MSN等好友</span>
+							<div class="button-section">
+								<button type="button" class="mybtn btn">创建链接</button>
+								
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="dialog-footer">
+					<button type="button" class="share-close dialogclose btn btn-default">
+					关闭  </button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="confirm" class="dialog dialog-confirm">
+	<div class="dialog-header dialog-drag">
+		<h3>
+			<span class="dialog-header-title">
+				<em class="select-text">确认删除</em>
+			</span>
+		</h3>
+		<div class="dialog-control">
+			<span class="dialog-icon dialog-close confirm-close">
+			</span>
+		</div>
+	</div>
+	<div class="dialog-body">
+		<div style="text-align:center;padding:22px;">
+		确认要把所选文件放入回收站吗？<br>删除的文件可在10天内通过回收站还原
+		</div>
+	</div>
+	<div class="confirm-dialog-footer">
+		<button type="button" class="btn btn-danger">
+					确定  </button>
+		<button type="button" class="confirm-close btn btn-default">
+					取消  </button>			
+	</div>
+</div>
+<section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -227,6 +372,7 @@
             </div>
         </div>
     </section><!--/#bottom-->
+
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
